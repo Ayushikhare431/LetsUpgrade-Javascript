@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment2/ question-2</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.input{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+}
+.input input{
+    padding: 10px;
+margin: 10px;
+
+}
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="input">
+           <input  id="input1" type="text"  placeholder="enter text here"/>
+           <input  id="input2" type="text"  placeholder="will be copied" />
+       </div>
+       <div class="btn">
+           <button onclick="copy()">Copy</button>
+       </div>
+   </div> 
+</body>
+<script>
+    function copy(){
+    const box1=document.getElementById("input1")
+    const box2=document.getElementById("input2")
+    box2.value=box1.value;
+    
+
+     
+}
+</script>
+</html>

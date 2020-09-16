@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2/question 4</title>
+</head>
+<body>
+    <script>
+        let students=[
+            {
+             name:"ayushi",
+             age:59,
+             country:"india",
+             hobbies:["reading","dancing","scrolling"]
+
+
+            },
+            {
+            name:"billiyansh",
+             age:20,
+             country:"india",
+             hobbies:["smoking","drinking","scrolling"]
+
+
+            },
+            {
+             name:"amit",
+             age:32,
+             country:"canada",
+             hobbies:["coading","reading","cricket"]
+
+
+            },
+            {
+            name:"kivi",
+             age:22,
+             country:"america",
+             hobbies:["reading","dancing","scrolling"]
+
+            }
+        ]
+        function display_age(){
+            console.log("students having age less then 30:");
+            console.log("______________________________________________________________________");
+            students.forEach(function(element){
+                if(element.age<30){
+                    console.log(element);
+                }
+            });
+        }
+
+            function display_country(){
+                console.log("students belongs to india:");
+                console.log("______________________________________________________________________");
+                students.forEach(function(element){
+                    if(element.country=="india")
+                    {
+                        console.log(element);
+
+                    }
+                });
+
+
+            }
+            
+        
+        display_age(students);
+        display_country(students);
+
+    </script>
+</body>
+</html>
